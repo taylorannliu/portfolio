@@ -13,22 +13,29 @@
     </head>
     <body>
         <header>
-            <a class="headingChild"><img src="./images/navbarHome.svg" width="250rem" alt="homeLogo"></a>
+            <a href="styleGuide.html" class="headingChild"><img src="./images/navbarHomeStyleGuide.svg" width="250rem" alt="homeLogo"></a>
             <nav class="navChild">      
-                <a>About Me</a>
-                <a>Internships</a>
-                <a>Projects</a>            
+                <a href="exampleProject.html">Example Project</a>
+                <a class="activeNav" href="styleGuide.html">Site Styles</a>           
             </nav>
         </header>
 
         <div class="mainContainer">
-            <h1>Portfolio Style Guide</h1>
-            <p>Below is the Style guide to my portfolio, coded and designed by myself.</p>
+            <section class="headerSection dividerTop imageInHeader">
+                <div class="imgChild">
+                    <img src="./images/blackbgFish.svg" alt="my fish logo" width="100%">
+                </div>
+                <div class="textChild">
+                    <h1>Welcome to the Style Guide</h1>
+                    <p>Here is the Style Guide of my portfolio, detailing the type, colours, and element styles used on my portfolio. <a class="hyperlink" href="/projects.html">Return to the main portfolio here</a>. All code and visuals are done by me. All coding references I used are cited within the code, which you can view on my <a class="hyperlink" href="https://github.com/taylorannliu/portfolio">repository</a>. Enjoy!</p>
+                </div>
+                
+            </section>
             
-            <section>
+            <section class="dividerBottom">
                 <h2>Fonts</h2>
-                <h3>Body (DM Sans)</h3>
-                <p>The quick brown fox jumped over the lazy dog</p>
+                <h3>Headings (Lemon Milk)</h3>
+                <p>Body copy (DM Sans)</p>
             </section>
 
             <section>
@@ -41,11 +48,17 @@
             <section>
                 <h2>Colours</h2>
                 <span><h3 class="sapphire">Sapphire (#2635BA)</h3></span>
+                <p>The site's primary colour. Used as the background on main pages and the accent colour on project pages.</p>
                 <h3 class="lemonJuice">Lemon Juice (#FFFF54)</h3>
+                <p>The main accent colour. A bright yellows that stands out nicely.</p>
                 <h3 class="aquamarine">Aquamarine (#48F0D2)</h3>
+                <p>A secondary accent colour, mainly used to denote interactivity like hyperlinks and button hover states.</p>
                 <h3>Blanche (#FFFFFF)</h3>
+                <p>Basic white. used as the background for some elements and as paragraph text colour on blue pages.</p>
                 <h3 class="slate">Slate (#2D2D2F)</h3>
+                <p>A cool, dark grey used as the paragraph text colour on white pages.</p>
                 <h3 class="greenGrey">Green Grey (#588486)</h3>
+                <p>An understated greenish grey used for subheadings with less hierarchy.</p>
             </section>
 
             <section>
@@ -57,6 +70,7 @@
             <section>
                 <h2>Site Elements</h2>
                 <h3>Portfolio Item</h3>
+                <a class="portfolioItemlink" href="exampleProject.html">
                 <div class="portfolioItem">
                     <div class="portfolioItemImage"></div>
                     <div class="portfolioItemText">
@@ -66,14 +80,15 @@
 
                     </div>
                 </div>
+                </a>
             </section>
 
         </div>
 
         <footer>
-            <p>Thank you for checking out my style guide!</p>
-            <a>Back to Main Site</a>
-            <a>Repository</a>
+            <h2>Thank you for checking out my style guide!</h2>
+            <a class="footerLink">Back to Main Site</a>
+            <a class="footerLink" href="https://github.com/taylorannliu/portfolio">Repository</a>
         </footer>
         
     </body>

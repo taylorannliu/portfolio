@@ -1,0 +1,60 @@
+body {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #2635BA;
+}
+
+h2 {
+    color: #2635BA;
+}
+
+h3 {
+    color: #2D2D2F;
+    margin-bottom: 0.3rem;
+}
+
+h4 {
+    color: #2D2D2F;
+}
+
+p {
+    color: #2D2D2F;
+    margin-top: 0;
+}
+
+
+.imageSpan {
+    padding: 0; 
+    margin: 0;
+}
+
+/* flexity flex parts */
+.flexSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media  screen and (max-width: 710px) {
+    .flexSection {
+        flex-direction: column;
+    }
+}
+
+.flexSection div {
+    flex: 1;
+}
+
+.infoSection {
+    padding: 2rem 10vw 2rem 10vw;
+    margin-bottom: 2rem;
+}
+
+.projectSubHeader {
+    color: #588486;
+    margin-bottom: 0;
+}
