@@ -90,6 +90,10 @@ p{
     line-height: 140%;
 }
 
+figcaption{
+    color: #2635BA;
+}
+
 /* Interactive Elements */
 a {
     text-decoration: none;
@@ -121,7 +125,7 @@ a {
 
 .buttonMain:hover, .buttonMain:focus, .buttonMain:active {
     background-color: #48F0D2;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 /* Portfolio Items */
@@ -137,15 +141,29 @@ a {
     border-radius: .5rem;
     /*drop shadow learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
     filter: drop-shadow(0 .5rem 1rem rgba(0, 0, 0, 0.4));
+    transform: scale(1);
+    transition: transform 0.15s ease-out;
+}
+
+.portfolioItem:hover, .portfolioItem:focus, .portfolioItem:active {
+    transform: scale(1.03);
+    transition: transform 0.15s ease-out;
 }
 
 .portfolioItemImage {
     /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
-    background-image: url(../images/tgThumbnail.png);
     background-size: cover;
     background-position: center;
     flex: 1.8;
     border-radius: .5rem 0 0 .5rem;
+}
+
+#turquoiseGoatThumbnail {
+    background-image: url(../images/tgThumbnail.png);
+}
+
+#empathThumbnail {
+    background-image: url(../images/empathThumbnail.png);
 }
 
 .portfolioItemText {
@@ -184,12 +202,20 @@ a {
     .portfolioItem {
         flex-direction: column;
         width: 100%;
-        height: 40rem;
+        height: 25rem;
     }
     .portfolioItemImage{
         border-radius: .5rem .5rem 0 0;
     }
+
+    .portfolioItemTitle{
+        margin-top: 0;
+    }
+
     .portfolioItemText{
         padding: 1rem 2rem;
+    }
+    .portfolioItemDescription{
+        display: none;
     }
 }

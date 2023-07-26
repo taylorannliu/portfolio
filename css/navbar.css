@@ -31,7 +31,7 @@ header {
 
 .navChild a:hover, .navChild a:active, .navChild a:focus {
     color: #48F0D2;
-    transition: color 0.3s ease-in;
+    transition: color 0.2s ease-in;
 }
 
 .activeNav {

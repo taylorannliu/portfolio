@@ -24,9 +24,32 @@ p {
     margin-top: 0;
 }
 
+.quoteText {
+    font-size: 1.25rem;
+    
+}
+
+.quoteAuthor {
+    color: #2635BA;
+}
 
 .imageSpan {
     padding: 0; 
+    margin: 0;
+}
+
+.singleQuote {
+    margin: 2rem;
+}
+
+.blockItem{
+    background-color: #2635BA;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.blockItem p {
+    color: #FFFFFF;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -39,13 +62,26 @@ p {
     gap: 2rem;
 }
 
+.flexDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 @media  screen and (max-width: 710px) {
     .flexSection {
         flex-direction: column;
     }
+    .flexDiv {
+        flex-direction: column;
+    }
 }
 
-.flexSection div {
+.flexSection div, .flexDiv div {
     flex: 1;
 }
 
