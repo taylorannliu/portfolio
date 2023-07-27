@@ -53,44 +53,4 @@ p {
     margin: 0;
 }
 
-/* flexity flex parts */
-.flexSection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 2rem;
-}
 
-.flexDiv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-@media  screen and (max-width: 710px) {
-    .flexSection {
-        flex-direction: column;
-    }
-    .flexDiv {
-        flex-direction: column;
-    }
-}
-
-.flexSection div, .flexDiv div {
-    flex: 1;
-}
-
-.infoSection {
-    padding: 2rem 10vw 2rem 10vw;
-    margin-bottom: 2rem;
-}
-
-.projectSubHeader {
-    color: #588486;
-    margin-bottom: 0;
-}
