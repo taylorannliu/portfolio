@@ -26,9 +26,9 @@
             </div>
         </header>
 
-        <a class="backToTop" href="#"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></a>
+        <button id="backToTop" onclick="scrollToTop()"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button>
 
-        <section class="imageSpan">
+        <section id="banner" class="imageSpan">
             <img src="./images/empath/banner1.png" alt="Empath: Daily Reading and Community" width="100%">
             <img src="./images/empath/banner2.png" alt="Read and learn your way" width="100%">
             <img src="./images/empath/banner3.png" alt="Test your knowledge" width="100%">
@@ -134,6 +134,30 @@
             <p>After another week of refinement, we brought our prototype to the final state that is in now. We revamped the onboarding, added accessibility options to the reader view like increasing text size, dark mode, and the ability to toggle key insights on or off, and redesigned interactions regarding the community page for better usability. In this project, I went from an absolute newbie at Protopie to gaining a sort of confidence using the software. I also built confidence in my presentation skills through the consistent weekly progress presentations, and learned how to conduct usability tests. While there are ways I would like to improve upon this project, like doing more research and conducting another round of tests, I’m proud of what my team and I accomplished given this short time frame.</p>
         </section>
 
+        <section class="moreProjects">
+            <h2 class="yellowHeader">More Projects</h2>
+            <div class="moreProjectsDiv">
+                <a class="portfolioItemlink" href="turquoiseGoatCards.html">
+                    <div class="portfolioItem">
+                        <div class="portfolioItemImage" id="turquoiseGoatThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Research / Illustration</p>
+                            <p class="portfolioItemTitle">Turquoise Goat Trading Cards</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="portfolioItemlink" href="boundByFlame.html">
+                    <div class="portfolioItem">
+                        <div class="portfolioItemImage" id="bbfThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Graphic Design / Illustration</p>
+                            <p class="portfolioItemTitle">Bound by Flame: A TTRPG</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <footer>
             <h2>Thank you for visiting my portfolio</h2>
             <a href="styleGuide.html" class="footerLink">Check out the style guide!</a>
@@ -141,6 +165,7 @@
         </footer>
 
         <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
     </body>
 
 </html>

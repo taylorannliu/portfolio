@@ -26,9 +26,9 @@
             </div>
         </header>
 
-        <a class="backToTop" href="#"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></a>
+        <button id="backToTop" onclick="scrollToTop()"><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button>
 
-        <section class="imageSpan">
+        <section id="banner" class="imageSpan">
             <img src="./images/turquoiseGoat/banner.png" alt="Introducing Turquoise Goat Trading Cards!" width="100%">
         </section>
 
@@ -48,12 +48,12 @@
             </div>
         </section>
 
-        <section class="flexSection">
-            <div>
+        <section class="flexImageSection">
+            <div class="flexInfo">
                 <h2>Who is Turquoise Goat?</h2>
                 <p>Turquoise Goat is a queer-owned 90s themed board game cafe located in downtown vancouver. The establishment aims to be a lively, inclusive, and accessible place for customers to play board games and enjoy uniquely-themed food and drinks made by Turquoise Goat’s diverse team.</p>
             </div>
-            <div>
+            <div class="flexImage">
                 <figure>
                     <img src="./images/turquoiseGoat/tgCollage.png" width="100%" alt="Turquoise Goat's unique atmosphere">
                     <figcaption>Exterior and interior of Turquoise Goat</figcaption>
@@ -137,12 +137,12 @@
             </div>
         </section>
 
-        <section class="flexSection">
-            <div>
+        <section class="flexImageSection">
+            <div class="flexInfo">
                 <h2>Design Persona</h2>
                 <p>Afterwards, we created a customer persona for us to design for. This character encompassed was an amalgamation of recurring traits and opinions from the many customers we observed and interviewed during ethnography.</p>
             </div>
-            <div>
+            <div class="flexImage">
                 <figure>
                     <img src="./images/turquoiseGoat/persona.png" width="100%" alt="persona poster with basic info">
                     <figcaption>Our persona, Enrique, a board game fan who likes to go to the cafe to spend time with his friends.</figcaption>
@@ -191,11 +191,11 @@
                     </figure>
                 </div>
             </div>
-            <div class="flexDiv">
-                <div>
+            <div class="flexImageSection">
+                <div class="flexInfo">
                     <p>Then, Alyssa designed the frames for the cards, and we put them together on Figma. All 4 of us then designed the packaging for the card booster packs. The next day, I printed them out on double-sided cardstock. All of us spent a day together cutting the cards, making the packs, and taking quality mock-up photos.</p>
                 </div>
-                <div>
+                <div class="flexImage">
                     <figure>
                         <img src="./images/turquoiseGoat/makingcards.png" width="100%" alt="work in progress image of cards">
                         <figcaption>Cutting, corner-rounding, and putting together booster packs</figcaption>
@@ -210,6 +210,30 @@
             <img src="./images/turquoiseGoat/allCards.png" width="100%" alt="the full completed card set">
         </section>
 
+        <section class="moreProjects">
+            <h2 class="yellowHeader">More Projects</h2>
+            <div class="moreProjectsDiv">
+                <a class="portfolioItemlink" href="empathApp.html">
+                    <div class="portfolioItem footerProject">
+                        <div class="portfolioItemImage" id="empathThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Research / UX / UI / Prototyping</p>
+                            <p class="portfolioItemTitle">Empath: Daily Reading and Community</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="portfolioItemlink" href="boundByFlame.html">
+                    <div class="portfolioItem footerProject">
+                        <div class="portfolioItemImage" id="bbfThumbnail"></div>
+                        <div class="portfolioItemText">
+                            <p class="portfolioItemCategory">Graphic Design / Illustration</p>
+                            <p class="portfolioItemTitle">Bound by Flame: A TTRPG</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <footer>
             <h2>Thank you for visiting my portfolio</h2>
             <a href="styleGuide.html" class="footerLink">Check out the style guide!</a>
@@ -217,5 +241,6 @@
         </footer>
 
         <script src="js/hamburger.js"></script>
+        <script src="js/jsStyles.js"></script>
     </body>
 </html>

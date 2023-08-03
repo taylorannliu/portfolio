@@ -88,7 +88,8 @@ p {
     left: 0;
 }
 
-#projects{
+
+.centerHeading{
     text-align: center;
 }
 
@@ -120,5 +121,54 @@ p {
     }
     .intro4{
         top: 33rem;
+    }
+}
+
+/* Portfolio Items */
+
+.portfolioItem {
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50rem;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    /*drop shadow learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+    filter: drop-shadow(0 .5rem 1rem rgba(0, 0, 0, 0.4));
+    transform: scale(1);
+    transition: transform 0.15s ease-out;
+}
+
+
+@media screen and (max-width: 1290px) {
+    .portfolioItem {
+        width: 40rem;
+    }
+    .portfolioItemText{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .portfolioItem {
+        flex-direction: column;
+        width: 100%;
+        height: 25rem;
+    }
+    .portfolioItemImage{
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .portfolioItemTitle{
+        margin-top: 0;
+    }
+
+    .portfolioItemText{
+        padding: 1rem 2rem;
+    }
+    .portfolioItemDescription{
+        display: none;
     }
 }

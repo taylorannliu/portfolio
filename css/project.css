@@ -53,9 +53,63 @@ p {
     margin: 0;
 }
 
-.backToTop {
+#backToTop {
     position: fixed;
     bottom: 5vh;
     right: 5vw;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.0);
+    transition: transform 0.15s ease-out;
 }
 
+#backToTop:hover, .backToTop:focus {
+    transform: scale(1.1);
+    transition: transform 0.15s ease-out;
+}
+
+
+.moreProjects {
+    background-color: #2D2D2F;
+    margin-bottom: 0;
+    padding-top: 5rem;
+}
+
+.moreProjectsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.portfolioItem {
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 25rem;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    /*drop shadow learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+    filter: drop-shadow(0 .5rem 1rem rgba(0, 0, 0, 0.4));
+    transform: scale(1);
+    transition: transform 0.15s ease-out;
+}
+
+.portfolioItemImage {
+    /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-size: cover;
+    background-position: center;
+    flex: 1.8;
+    border-radius: .5rem .5rem 0 0 ;
+}
+
+.moreProjectsDiv a {
+    flex: 1 1 50%;
+}
+
+@media  screen and (max-width: 1050px) {
+    .moreProjectsDiv{
+        flex-direction: column;
+    }
+}
