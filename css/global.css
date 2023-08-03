@@ -272,6 +272,11 @@ a {
     .flexDiv {
         flex-direction: column;
     }
+    section {
+        padding-right: 10vw;
+        padding-left: 10vw;
+        margin-bottom: 2rem;
+    }
 }
 
 .flexSection div:not(.bioInfoDiv, .bioImgDiv), .flexDiv div {

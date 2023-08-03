@@ -44,8 +44,54 @@ header {
     align-self: center;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger:hover, .hamburger:active {
+    cursor: pointer;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color:#FFFF54;
+    border-radius: 2px;
+}
+
 @media screen and (max-width: 710px) {
+    header{
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+    
     .navChild {
+        display: none;
+        flex: 6;
+    }
+
+    .headingChild {
+        flex: 1;
+    }
+
+    .navChild.active {
+        display: flex;
         flex-direction: column-reverse;
+        position: fixed;
+        right: 5%;
+        top: 10%;
+        padding: 1.5rem 1rem;
+        background-color:#2635BA;
+        border-radius: .5rem;
+    }
+
+    .navChild a{
+        font-size: 1.8rem;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: center;
     }
 }

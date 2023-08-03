@@ -22,3 +22,28 @@ h4 {
 p {
     color: #FFFFFF;
 }
+
+.introduction{
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.introHeading{
+    font-size: 1.2rem;
+}
+
+.introBig{
+    font-family: 'LemonMilk';
+    font-size: 4rem;
+    font-weight: bold;
+    margin: .2rem;
+    color: #FFFF54;
+}
+
+.toProjectsButton{
+    margin-top: 3rem;
+    border-radius: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
