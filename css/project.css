@@ -113,3 +113,19 @@ p {
         flex-direction: column;
     }
 }
+
+.altColors {
+    background-color: #2D2D2F;
+}
+
+.altColors p, .altColors h3 {
+    color: #FFFFFF;
+}
+
+.altColors figcaption, .altColors h2 {
+    color: #FFFF54;
+}
+
+.belowDivider{
+    padding-top: 8rem;
+}
