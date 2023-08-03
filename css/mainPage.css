@@ -25,8 +25,9 @@ p {
 
 .introduction{
     text-align: center;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-bottom: 20rem;
+    margin-top: 15vh;
+    padding: 2rem 0;
 }
 
 .introHeading{
@@ -46,4 +47,78 @@ p {
     border-radius: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+.introImage{
+    position: absolute;
+    /* background image learned here: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+    background-size: cover;
+    background-position: center;
+}
+
+.intro1{
+    background-image: url(../images/intro/introBbf.png);
+    height: 12rem;
+    width: 22rem;
+    top: 5vh;
+    left: 10vw;
+}
+
+.intro2{
+    background-image: url(../images/intro/introAquanow.png);
+    height: 16rem;
+    width: 10vw;
+    top: 10rem;
+    right: 0;
+}
+
+.intro3{
+    background-image: url(../images/intro/introEmpath.png);
+    height: 18rem;
+    width: 14rem;
+    top: 42rem;
+    right: 5vw;
+}
+
+.intro4{
+    background-image: url(../images/intro/introTg.png);
+    height: 12rem;
+    width: 20vw;
+    top: 35rem;
+    left: 0;
+}
+
+#projects{
+    text-align: center;
+}
+
+@media screen and (max-width: 1015px) {
+    .introBig{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    .introBig{
+        font-size: 6vw;
+    }
+    .introHeading{
+        font-size: 1rem;
+    }
+    .intro1{
+        top: 2vh;
+    }
+}
+@media screen and (max-width: 520px) {
+    .intro1{
+        left: -20vw;
+    }
+    .intro2 {
+        top: -3rem;
+    }
+    .intro3{
+        top: 33rem;
+    }
+    .intro4{
+        top: 33rem;
+    }
 }
