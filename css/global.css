@@ -97,10 +97,15 @@ p{
 
 figcaption{
     color: #2635BA;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: .5rem;
 }
 
 /* Interactive Elements */
+#backToTop{
+    z-index: 100;
+}
+
 a {
     text-decoration: none;
 }

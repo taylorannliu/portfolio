@@ -62,8 +62,7 @@ header {
 
 @media screen and (max-width: 710px) {
     header{
-        padding-top: .6rem;
-        padding-bottom: .6rem;
+        padding: .6rem 1rem .6rem 1rem;
     }
     
     .navChild {
