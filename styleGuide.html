@@ -69,12 +69,26 @@
 
             <section>
                 <h2>Buttons and Links</h2>
+                <h3>Hyperlinks</h3>
                 <p>Within a paragraph of text, this is what a <a class="hyperlink" href="https://www.hepper.com/wp-content/uploads/2022/12/scottish-fold-cats-unusual-sitting-position-on-a-couch_Mert-Akkas_Shutterstock.jpg">hyperlink</a> would look like. I hope you like this nice photograph.</p>
+                <h3>Main Button</h3>
+                <p>For actions like checking out my work, or viewing a prototype</p>
                 <a class="buttonMain">Click Me!</a>
+                <h3>Back to top Button</h3>
+                <p>Each project page is long. For better user freedom and control, I've included a button that takes you back to the top of the page. The button looks like this:</p>
+                <a><button><img src="./images/backToTop.svg" alt="back to top button" width="60px"></button></a>
+
             </section>
 
             <section>
                 <h2>Site Elements</h2>
+                <h3>Navbar</h3>
+                <p>The main navigation for the site. The yellow highlighted link represents the current page/section.</p>
+                <nav class="navChild exampleBar">      
+                    <a href="about.html">About</a>
+                    <a href="internships.html">Internships</a>
+                    <a class="activeNav" href="projects.html">Projects</a>           
+                </nav>
                 <h3>Portfolio Item</h3>
                 <a class="portfolioItemlink" href="turquoiseGoatCards.html">
                 <div class="portfolioItem">
@@ -83,7 +97,6 @@
                         <p class="portfolioItemCategory">Design Research / Illustration</p>
                         <p class="portfolioItemTitle">Turquoise Goat Trading Cards</p>
                         <p class="portfolioItemDescription">How might we enhance Turquoise Goat’s appeal as a destination where people can make memories with friends and preserve the unique experience they built together?</p>
-
                     </div>
                 </div>
                 </a>
@@ -98,7 +111,7 @@
         </footer>
 
         <script src="js/hamburger.js"></script>
-        
+        <script src="js/jsStyles.js"></script>
     </body>
 
 </html>

@@ -65,7 +65,7 @@ header {
         padding: .6rem 1rem .6rem 1rem;
     }
     
-    .navChild {
+    .navChild:not(.exampleBar) {
         display: none;
         flex: 6;
     }
@@ -85,7 +85,7 @@ header {
         border-radius: .5rem;
     }
 
-    .navChild a{
+    .navChild:not(.exampleBar) a{
         font-size: 1.8rem;
     }
 
